@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="frames.css">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+</head>
+<body>
+    <div class="btn-selection">
+        <div>
+            <button class="btn">Student Council</button>
+        </div>
+        <div>
+            <button class="btn-cs" style="background-color:blue;">Computer Society</button>
+        </div>
+        <div>
+            <button class="btn">STICA Young Manager Society</button>
+        </div>
+        <div>
+            <button class="btn">HM Society</button>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="orgs-container-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>E-mail</th>
+                        <th>Access level</th>
+                        <th>Process Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php while ($row = mysqli_fetch_array($studentResult)) { ?>
+                    <tr>
+                        <td>02000255140</td>
+                        <td>Doe, John S.</td>
+                        <td>santiagojohndaryll@gmail.com</td>
+                        <td>STUDENT</td>
+
+                        <td>
+                            <a href="orgApplicationPreview.html"><button name="editSchedBtn" class="button-action">REVIEW APPLICATION</button></a>
+                        </td>
+                    </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<!-- #2e4ead -->

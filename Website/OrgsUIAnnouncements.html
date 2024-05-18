@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+#tbl {
+  font-family: var(--Lexend);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tbl td, #tbl th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tbl tr:nth-child(even){background-color: #f2f2f2;}
+
+#tbl tr:hover {background-color: #ddd;}
+
+#tbl th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04113A;
+  color: white;
+}
+
+label{
+    font-family: var(--Lexend);
+    font-size: 1 rem;
+}
+
+input{
+    font-family: var(--Lexend);
+    font-size: 1 rem;
+}
+
+textarea[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--Lexend);
+  font-size: 1 rem;
+}
+
+input[type=file], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=datetime-local], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: var(--Lexend);
+    font-size: 1 rem;
+}
+
+input[type=checkbox], select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit] {
+  background-color: #92a6e2;
+}
+
+input[type=submit]:hover {
+  background-color: #04113A;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#div1{
+    width: 35%;
+}
+
+#div2{
+    width: 60%;
+    float: right;
+    margin-top: 4%;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Organizations and Clubs</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+
+</head>
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">SOC</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="OrgsUI.html">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="OrgsUIAnnouncements.html">Announcements</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="OrgsUIOfficers.html">Officers</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Members</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="orgsProcessApplication.html">Applications</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Splash.php">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+        <section>
+            
+
+<div class="main-container">
+    <div id="div1">
+    <h3>Add & Edit Announcements</h3>
+  <form>
+    <label for="title">Title</label><br>
+    <input type="text" placeholder="Title of the announcement"><br>
+
+    <label for="when">When</label><br>
+    <input type="datetime-local"><br>
+    
+    <label for="participants">Participants</label><br>
+    <br><input type="checkbox">
+    <label for="country">All Courses</label><br>
+    <input type="checkbox">
+    <label for="country">BSIT</label><br>
+    <input type="checkbox">
+    <label for="country">BSHM</label><br>
+    <input type="checkbox">
+    <label for="country">BSBA</label><br>
+    <input type="checkbox">
+    <label for="country">ITMAWD</label><br>
+    <input type="checkbox">
+    <label for="country">GAS</label><br>
+    <input type="checkbox">
+    <label for="country">TOPER</label><br>
+    <input type="checkbox">
+    <label for="country">CCTEC</label><br>
+    <input type="checkbox">
+    <label for="country">HUMSS</label><br>
+    
+  <br><textarea type="text" rows="4" cols="50">Type the description</textarea>
+  
+  <br><input type="file" accept="image/*" onchange="loadFile(event)">
+      <p><img id="output" width="200"/></p>
+      <script>
+          var loadFile = function(event) {
+              var image = document.getElementById('output');
+              image.src=URL.createObjectURL(event.target.files[0]);
+          };
+      </script>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+    <div id="div2">
+        <table id="tbl">
+            <tr>
+                <th>Title</th>
+                <th>When</th>
+                 <th>Participants</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Action</th>
+            </tr>
+        </table>
+    </div>
+</div>
+    </section>
+    </main>
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>SOC is designed to help the STI students to access the different
+organizations and clubs. To allow students interactive activities and assessments
+for effective and accessible log in anytime. Students will be able to register
+digitally and save time.</p>
+            </div>
+            
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+    </body>
+    </html>

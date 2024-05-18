@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Computer Society Registration</title>
+    <link rel="stylesheet" href="CSRStyle.css">
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">Welcome Student Applicant</div>
+
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="CSRegistrationDashboard.html" class="active">
+                        <span class="icon"><i class="fa-solid fa-id-card-clip"></i></span>
+                        <span class="title">Status</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <div class="application-status-container">
+                <div class="label"><b>STATUS</b></div>
+                <div class="application-status-contents">
+                    <p><b>Application Status: </b><span style="color: blue";>NEW</span></p><br><br>
+                    <p><b>Application ID:</b><span style="color: green";> 0001</span></p>
+                    <p><b>Interview Date:</b> N/A</p>
+                    <p><b>Interview Time:</b> N/A</p>
+                    <p><b>Interview Venue:</b> N/A</p><br><br>
+                    <p><b>Important Reminders:</b> </p>
+                    <p>Please fill out the necessary forms and make sure to upload your 2x2 picture. The approximate waiting time is 3 days for us to check your credentials and the schedule for your interview will appear once your application is reviewed by the officer.</p>
+                </div>
+            </div>
+
+            <div class="requirements-container">
+                <div class="label"><b>REQUIREMENTS</b></div>
+                <div class="application-requirements">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Requirements</th>
+                                <th>Actions/Updates</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Requirement #1: <br> <b>Fill-up Application Form</b></td>
+                                <td><span style="color: green" ;><strong> 0001 </strong></span></td>
+                            </tr>
+                            <tr>
+                                <td>Requirement #2: <br> <b>Upload 2x2 image</b></td>
+                                <td><span style="color: green" ;><strong>UPLOADED</strong></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+
+        function validateForm() {
+            var x = document.forms["studentForm"]["firstName"].value;
+            if (x == "") {
+                alert("First name must be filled out");
+                return false;
+            }
+            var y = document.forms["studentForm"]["lastName"].value;
+            if (y == "") {
+                alert("Last name must be filled out");
+                return false;
+            }
+            var z = document.forms["studentForm"]["email"].value;
+            if (z == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (!z.match(emailFormat)) {
+                alert("Email must be in correct format");
+                return false;
+            }
+        }
+        /*
+        function showForm() {
+            var form = document.getElementById("form");
+            if (form.style.display === "none") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+
+            var lbl = document.getElementsById("frm-label");
+            if (lbl.style.display === "none") {
+                lbl.style.display = "block";
+            } else {
+                lbl.styl.display = "none";
+            }
+        }
+        */
+        const form = document.getElementById("form");
+        const toggleFormBtn = document.getElementById("toggle-form-btn");
+
+        toggleFormBtn.addEventListener("click", () => {
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        });
+    </script>
+</body>
+</html>

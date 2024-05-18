@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
+
+*{
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	overflow: auto;
+}
+
+iframe {
+	border-style: none;
+}
+
+.btn {
+	background: #2e4ead;
+}
+
+	.btn:hover {
+		background: #01081f;
+		color: #fff;
+		transition: 0.5s;
+	}
+
+.btn-selection {
+	display: flex;
+	flex-direction: row;
+	width: 95vw;
+}
+
+	.btn-selection div {
+		width: 100%;
+		height: 45px;
+		margin: 3px;
+	}
+
+		.btn-selection div button {
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+			background-color: #2e4ead;
+			border-style: none;
+			color: #000;
+			font-size: 17px;
+		}
+
+.list{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+
+.list div{
+	margin: 20px;
+}
+
+.btn-clubs-selection {
+	display: flex;
+	flex-direction: column;
+	width: 40vw;
+	height: 100%;
+}
+
+.btn-clubs-selection div {
+	width: 100%;
+	height: 45px;
+	margin: 3px;
+}
+
+.btn-cs {
+	background-color: #2e4ead;
+}
+
+	.btn-clubs-selection div button {
+		width: 100%;
+		height: 100%;
+		cursor: pointer;
+		
+		font-size: 17px;
+	}
+
+.btn {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+table {
+	margin-top: 10px;
+	background: white;
+}
+
+.maintenance-dropdown {
+	margin-left: 5px;
+	display: flex;
+	flex-direction: row;
+	width: 99vw;
+}
+
+	.maintenance-dropdown div {
+		width: 100%;
+		height: 45px;
+		margin: 3px;
+	}
+
+		.maintenance-dropdown div button {
+			width: 90%;
+			height: 100%;
+			cursor: pointer;
+			background-color: #2e4ead;
+			color: #aaaaaa;
+			font-size: 17px;
+		}
+
+.maintenance-dropdown ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+
+.float-right {
+	float: right;
+}
+
+.fa {
+	font-size: .8em;
+	line-height: 22px !important;
+}
+
+dropdown {
+	display: inline-block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	height: 49px;
+}
+
+	dropdown label, dropdown ul li {
+		display: block;
+		width: 200px;
+		background: #ECF0F1;
+		padding: 15px 20px;
+	}
+
+		dropdown label:hover, dropdown ul li:hover {
+			background: #2e4ead;
+			color: white;
+			cursor: pointer;
+		}
+
+	dropdown label {
+		color: #000000;
+		border-left: 4px solid #2e4ead;
+		position: relative;
+		z-index: 2;
+	}
+
+	dropdown input {
+		display: none;
+	}
+
+		dropdown input ~ ul {
+			position: relative;
+			visibility: hidden;
+			opacity: 0;
+			top: -20px;
+			z-index: 1;
+		}
+
+		dropdown input:checked + label {
+			background: #2e4ead;
+			color: white;
+		}
+
+		dropdown input:checked ~ ul {
+			visibility: visible;
+			opacity: 1;
+			top: 0;
+		}
+
+
+.animate {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden; /* Chrome and Safari */
+	-moz-backface-visibility: hidden; /* Firefox */
+}
+
+.table{
+	width: 100vw;
+	border-collapse: collapse;
+	overflow: auto;
+}
+
+.table td,.table th{
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+.button-action{
+	background-color: white;
+	transition: 0.5s;
+}
+
+.button-action:hover {
+	background-color: #2e4ead;
+	color: #fff;
+	transition: 0.5s;
+}
+
+.add-btn {
+	border-style: solid;
+	border-width: 0px 0px 0px 5px;
+	border-color: #2e4ead;
+	background-color: #2e4ead;
+	font-size: 1.4rem;
+	width: 200px;
+	height: 40px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+
+	.add-btn:hover {
+		background-color: #04113a;
+		color: white;
+		transition: .5s;
+		cursor: pointer;
+	}
+
+.main-container{
+	
+}
+
+.resume-container {
+
+	width: 100vw;
+}
+
+.applicant-picture {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.applicant-info {
+	flex: 1;
+}
+
+.applicant-name {
+	margin: 0;
+}
+
+.applicant-contact-info {
+	font-size: 0.8em;
+}
+
+.certifications-trainings, .achievements-leadership {
+	flex: 1;
+	margin-top: 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	border: 1px solid #ccc;
+	padding: 8px;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+.interview-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.application-btn{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.application-btn div{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+	.application-btn div button {
+		height: 35px;
+		width: 40vw;
+	}
+
+.batch-upload {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	border-color: dimgray;
+	background-color: #2e4ead;
+	margin: 25px;
+	padding: 5px;
+}
+
+	.batch-upload h4 {
+		color: #aaaaaa;
+	}
+
+.group-form{
+	border-style: solid;
+	border-width: 1px;
+	background-color: white;
+	border-radius: 3px;
+	padding: 10px;
+	margin: 15px;
+
+}

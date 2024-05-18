@@ -1,0 +1,222 @@
+﻿.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+    /* Style the links inside the navigation bar */
+    .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        /* Change the color of links on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+.main-container{
+    height: 100vh;
+}
+
+/* Parallax effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8, .bgimg-9, .bgimg-10, .bgimg-11, .bgimg-12, .bgimg-13, .bgimg-14, .bgimg-15, .bgimg-16, .bgimg-17, .bgimg-18, .bgimg-19, .bgimg-20, .bgimg-21, .bgimg-22, .bgimg-23, .bgimg-24, .bgimg-25 {
+    position: relative;
+    opacity: 0.9;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bgimg-1 {
+    background-image: url('no.jpg');
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url('SC01.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-3 {
+    background-image: url('SC02.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-4 {
+    background-image: url('SC03.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-5 {
+    background-image: url('SC05.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-6 {
+    background-image: url('SC06.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-7 {
+    background-image: url('SC07.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-8 {
+    background-image: url('SC08.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-9 {
+    background-image: url('SC09.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-10 {
+    background-image: url('SC10.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-11 {
+    background-image: url('SC11.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-12 {
+    background-image: url('SC12.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-13 {
+    background-image: url('SC13.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-14 {
+    background-image: url('SC14.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-15 {
+    background-image: url('SC15.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-16 {
+    background-image: url('SC16.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-17 {
+    background-image: url('SC17.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-18 {
+    background-image: url('SC18.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-19 {
+    background-image: url('SC19.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-20 {
+    background-image: url('SC20.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-21 {
+    background-image: url('SC21.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-22 {
+    background-image: url('SC22.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-23 {
+    background-image: url('SC23.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-24 {
+    background-image: url('SC24.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.bgimg-25 {
+    background-image: url('SC25.jpg');
+    background-position-y: -160px;
+    height: 100vh;
+}
+
+.caption {
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #000;
+}
+
+    
+
+.sc-logo{
+    height: auto;
+    width: 200px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+    margin-top: -300px;
+    font-size: 5.5rem;
+}
+
+.border {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+    font-size: 5.5rem;
+}

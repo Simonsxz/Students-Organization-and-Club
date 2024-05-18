@@ -1,0 +1,12 @@
+{
+    "require": {
+        "respect/validation": "^2.2",
+        "illuminate/database": "5.2",
+        "adnanhussainturki/microsoft-api-php": "^0.03.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    }
+}

@@ -1,0 +1,339 @@
+﻿
+:root {
+    --main-color: #006cb7;
+    --text-color: #000000;
+    --bg-color: #fff;
+    --big-font: 5rem;
+    --h2-font: 2.25rem;
+    --p-font: 0.9rem;
+    --nav-color: #fbaf1b;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background-color: #f2f2f2;
+}
+
+h1, h2 {
+    color: #006699;
+}
+
+.club-select-section {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tile {
+    height: 200px;
+    width: 170px;
+    position: relative;
+}
+
+.clubs-img{
+    height: auto;
+    width: 50%;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    outline: none;
+    box-shadow: 15px 15px 25px rgba(2,28,53,0.05);
+}
+
+    input[type="checkbox"]:after {
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+        content: "\f111";
+        font-size: 22px;
+        top: 10px;
+        left: 10px;
+        color: #e2e6f3;
+    }
+
+    input[type="checkbox"]:hover {
+        transform: scale(1.08);
+    }
+
+    input[type="checkbox"]:checked {
+        border: 3px solid #478bfb;
+    }
+
+        input[type="checkbox"]:checked:after {
+            font-weight: 900;
+            content: "\f058";
+            color: #478bfb;
+        }
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+
+    label .fas {
+        font-size: 60px;
+        color: #2c2c51;
+    }
+
+input[type="checkbox"]:checked + label .fas {
+    animation: grow 0.5s;
+}
+
+@keyframes grow {
+    50% {
+        font-size: 80px;
+    }
+}
+
+label h6 {
+    font-family: "Poppins",sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #7b7b93;
+}
+
+/*
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+
+.card {
+    width: 230px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+    position: relative;
+}
+
+*/
+
+.submit-container {
+    margin-top: 1rem;
+    text-align: center;
+    width: 97vw;
+}
+
+/*
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card input[type="checkbox"] {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+    }
+
+        .card input[type="checkbox"]:checked + .card-content {
+            border: 2px solid #006699;
+            box-shadow: 0 0 0 2px #006699;
+        }
+
+    .card .card-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        border: 2px solid transparent;
+        transition: border 0.3s, box-shadow 0.3s;
+    }
+
+*/
+
+button[type="submit"] {
+    width: 100px;
+    height: 30px;
+    background-color: #006699;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    button[type="submit"]:hover {
+        background-color: #003366;
+    }
+
+.orgs-section-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.know-more-container {
+    width: 100%;
+    height: 100vh;
+    background: white;
+    border-style: solid;
+    border-color: #2e4ead;
+    border-width: 0.5px;
+    border-radius: 10px;
+    border-top-width: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.5rem;
+    align-items: center;
+    padding: 70px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 15px solid black;
+}
+
+.arrow-down-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.arrow-label {
+    color: black;
+    font-size: 20px;
+    margin: 0;
+    padding: 30px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-img img {
+    max-width: 100%;
+    width: 480px;
+    height: auto;
+}
+
+.about-text span {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.about-text h2 {
+    font-size: var(--h2-font);
+}
+
+.about-text p {
+    margin: 0.8rem 0 1.8rem;
+    line-height: 1.7;
+}
+
+.btn-body {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+    .btn-body:hover {
+        transform: scale(1.2) translateY(10px);
+        transition: .4s;
+    }
+
+.container-rectangle {
+
+    width: 98vw;
+    height: 110vh;
+    background: #FFFFFF;
+
+}
+
+.frame-bar {
+    position: relative;
+    width: 98vw;
+    height: 138px;
+    background: #0047FF;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.frame-bar-text {
+    position: absolute;
+    height: 54px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 54px;
+    /* identical to box height */
+
+
+    color: #FFFF;
+}
+
+.desc-text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.desc-text {
+
+    height: 54px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height */
+    
+    color: #000000;
+}
+
+.divider {
+    margin: 0 auto;
+    width: 50%;
+    width: 90vw;
+    height: 0px;
+    border-radius: 2px;
+    border: 1px solid #000000;
+}

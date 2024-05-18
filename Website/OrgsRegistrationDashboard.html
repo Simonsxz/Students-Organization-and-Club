@@ -1,0 +1,225 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Computer Society Registration</title>
+    <link rel="stylesheet" href="CSRStyle.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">SOC</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="index.php">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="myOrg.html">My Organizations</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="myClubs.html">My Clubs</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="OrgsRegistrationDashboard.html">Applications</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Payment</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="Splash.php">Logout</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="main_container">
+            <div class="application-status-container">
+                <div class="label"><b>STATUS</b></div>
+                <div class="application-status-contents">
+                    <p><b>Application Status: </b></p><br><br>
+                    <p><b>Application ID:</b> N/A</p>
+                    <p><b>Interview Date:</b> N/A</p>
+                    <p><b>Interview Time:</b> N/A</p>
+                    <p><b>Interview Venue:</b> N/A</p><br><br>
+                    <p><b>Important Reminders:</b> </p>
+                    <p>Please fill out the necessary forms and make sure to upload your 2x2 picture. The approximate waiting time is 3 days for us to check your credentials and the schedule for your interview will appear once your application is reviewed by the officer.</p>
+                </div>
+            </div>
+
+            <div class="requirements-container">
+                <div class="label"><b>REQUIREMENTS</b></div>
+                <div class="application-requirements">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Requirements</th>
+                                <th>Actions/Updates</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Requirement #1: <br> <b>Fill-up Application Form</b></td>
+                                <td><button class="button-action" id="toggle-form-btn" onclick="showForm()">Fill out here</button></td>
+                            </tr>
+                            <tr>
+                                <td>Requirement #2: <br> <b>Upload 2x2 image</b></td>
+                                <td>
+                                    <input type="file" name="image" accept="image/*">
+                                    <input type="submit" value="Upload">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="button-action" id="toggle-form-btn" onclick="location.href='submittedFormsRegistration.html'" style="margin-top: 30px; height: 35px;">CONFIRM SUBMISSION</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="fill-up-form">
+
+            <form id="form">
+                <label for="certs">Certifications & Trainings Attended</label>
+                <table name="certs">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Title</th>
+                            <th>Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="date" id="date-of-completion" name="date-of-completion required" ></td>
+                            <td><input type="text" id="title-of-cert" name="title-of-cert" required></td>
+                            <td><input type="text" id="venue" name="venue" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="date-of-completion" name="date-of-completion required"></td>
+                            <td><input type="text" id="title-of-cert" name="title-of-cert required"></td>
+                            <td><input type="text" id="venue" name="venue required"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="date-of-completion" name="date-of-completion required"></td>
+                            <td><input type="text" id="title-of-cert" name="title-of-cert required"></td>
+                            <td><input type="text" id="venue" name="venue required"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <label for="achievements">Achievements & Leadership Commitments</label>
+                <table name="achievements">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Recognition</th>
+                            <th>Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="date" id="date-of-attainment" name="date-of-attainment" required></td>
+                            <td><input type="text" id="recognition" name="recognition" required></td>
+                            <td><input type="text" id="venue" name="venue" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="date-of-attainment" name="date-of-attainment" required></td>
+                            <td><input type="text" id="recognition" name="recognition" required></td>
+                            <td><input type="text" id="venue" name="venue" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="date" id="date-of-attainment" name="date-of-attainment" required></td>
+                            <td><input type="text" id="recognition" name="recognition" required></td>
+                            <td><input type="text" id="venue" name="venue" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <input type="submit" value="Submit" href="">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+
+        function validateForm() {
+            var x = document.forms["studentForm"]["firstName"].value;
+            if (x == "") {
+                alert("First name must be filled out");
+                return false;
+            }
+            var y = document.forms["studentForm"]["lastName"].value;
+            if (y == "") {
+                alert("Last name must be filled out");
+                return false;
+            }
+            var z = document.forms["studentForm"]["email"].value;
+            if (z == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+            var emailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (!z.match(emailFormat)) {
+                alert("Email must be in correct format");
+                return false;
+            }
+        }
+        /*
+        function showForm() {
+            var form = document.getElementById("form");
+            if (form.style.display === "none") {
+                form.style.display = "block";
+            } else {
+                form.style.display = "none";
+            }
+
+            var lbl = document.getElementsById("frm-label");
+            if (lbl.style.display === "none") {
+                lbl.style.display = "block";
+            } else {
+                lbl.styl.display = "none";
+            }
+        }
+        */
+        const form = document.getElementById("form");
+        const toggleFormBtn = document.getElementById("toggle-form-btn");
+
+        toggleFormBtn.addEventListener("click", () => {
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        });
+    </script>
+</body>
+</html>

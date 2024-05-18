@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Join Orgs and Clubs</title>
+    <link rel="stylesheet" href="firstLogStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container-rectangle">
+        <div class="frame-bar">
+            <p class="frame-bar-text"> WELCOME TO STICA ORGS & CLUBS</p>
+        </div>
+        <div class="desc-text-container">
+            <p class="desc-text">Choose an organization to join</p>
+        </div>
+        <div class="divider">
+        </div>
+        <div class="container">
+            <form action="#" method="get">
+                <div class="card-container">
+                    <div class="card-row">
+                        <a href="#sc-info">
+                            <div class="card student-council">
+                                <input type="checkbox" name="organization" value="student-council" id="sc">
+                                <div class="card-content">Student Council</div>
+                            </div>
+                        </a>
+                        <a href="#cs-info">
+                            <div class="card computer-society">
+                                <input type="checkbox" name="organization" value="computer-society" id="cs">
+                                <div class="card-content">Computer Society</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-row">
+                        <a href="#hms-info">
+                            <div class="card hm-society">
+                                <input type="checkbox" name="organization" value="hm-society" id="hms">
+                                <div class="card-content">HM Society</div>
+                            </div>
+                        </a>
+                        <a href="#syms-info">
+                            <div class="card stica-young-ms">
+                                <input type="checkbox" name="organization" value="syms" id="syms">
+                                <div class="card-content">STICA Young Manager Society</div>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </form>
+            <div class="submit-container">
+                <button type="submit">Submit</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+    <!--
+     <div>
+         <form action="#" method="get">
+
+             <a href="#sc-info">
+                 <div class="card student-council">
+                     <input type="checkbox" name="organization" value="student-council" id="sc">
+                     <div class="card-content">Alliance of Camera Enthusiast</div>
+                 </div>
+             </a>
+
+             <a href="#cs-info">
+                 <div class="card computer-society">
+                     <input type="checkbox" name="organization" value="computer-society" id="cs">
+                     <div class="card-content">Athlos Club</div>
+                 </div>
+             </a>
+
+             <a href="#hms-info">
+                 <div class="card hm-society">
+                     <input type="checkbox" name="organization" value="hm-society" id="hms">
+                     <div class="card-content">Coders Club</div>
+                 </div>
+             </a>
+
+             <a href="#syms-info">
+                 <div class="card stica-young-ms">
+                     <input type="checkbox" name="organization" value="syms" id="syms">
+                     <div class="card-content">Teatro Versatil</div>
+                 </div>
+             </a>
+
+             <a href="#syms-info">
+                 <div class="card stica-young-ms">
+                     <input type="checkbox" name="organization" value="syms" id="syms">
+                     <div class="card-content">South Groovers</div>
+                 </div>
+             </a>
+
+             <br>
+             <div>
+                 <button type="submit">Submit</button>
+             </div>
+
+         </form>
+     </div>
+
+    ////////////////////////////// -->
+
+    <br><br>
+    <p>This UI does not represent the final result of this project. Design is still subject to change.</p>
+
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+
+    <script>
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        var checkboxArray = Array.prototype.slice.call(checkboxes);
+        checkboxArray.forEach(function (checkbox) {
+            checkbox.addEventListener('change', function (e) {
+                if (this.checked && checkboxArray.filter(function (cb) { return cb.checked; }).length > 2) {
+                    this.checked = false;
+                }
+            });
+        });
+
+        const fadeInElements = document.querySelectorAll('.fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.intersectionRatio > 0) {
+                    entry.target.classList.add('is-visible');
+                } else {
+                    entry.target.classList.remove('is-visible');
+                }
+            });
+        });
+
+        fadeInElements.forEach((fadeInElement) => {
+            observer.observe(fadeInElement);
+        });
+
+                                                                ///////////////////////////////////////////////////////////////
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Content Management System</title>
+    <style>
+        /* CSS for styling the page */
+        h1 {
+            color: blue;
+        }
+
+        .content {
+            margin: 0 auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Content Management System</h1>
+    <div id="content" class="content"></div>
+    <form onsubmit="updateContent(event)">
+        <label for="new-content">Enter new content:</label>
+        <input type="text" id="new-content" name="new-content">
+        <button type="submit">Update</button>
+    </form>
+    <script>
+        // JavaScript for updating the content
+        function updateContent(event) {
+            event.preventDefault(); // prevent the default form submission behavior
+            var newContent = document.getElementById("new-content").value;
+            document.getElementById("content").innerHTML = newContent;
+        }
+    </script>
+</body>
+</html>

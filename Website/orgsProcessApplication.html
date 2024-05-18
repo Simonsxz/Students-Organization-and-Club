@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+    <title>SOC Org</title>
+    <link rel="stylesheet" href="CSRStyle.css">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".wrapper").toggleClass("collapse");
+			});
+		});
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">Welcome Org/Club</div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+               
+                <li>
+                    <a href="orgsProcessFrame.html" class="active">
+                        <span class="icon"><i class="fa fa-building"></i></span>
+                        <span class="title">Applications</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="OrgsUIAnnouncements.html" class="">
+                        <span class="icon"><i class="fa fa-building"></i></span>
+                        <span class="title">Announcements</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <iframe src="orgsProcessFrame.html" style="width: 100%; height: 90vh; border-style: none;"></iframe>
+        </div>
+    </div>
+</body>
+</html>

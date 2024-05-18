@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <title>Add Student</title>
+</head>
+<body>
+    <div class="main-container">
+        <h3>ADD AN ACCOUNT</h3>
+        <h4>Personal Details</h4>
+        <form action="add_user.php" method="post">
+            <div class="registree-container">
+                <div>
+                    <label for="studentid">Student ID</label><br>
+                    <input type="text" id="studentid" name="studentid" class="txtbox" required><br>
+                </div>
+
+                <div>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" class="txtbox" required><br>
+                </div>
+
+                <div>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" class="txtbox" required><br>
+                </div>
+
+                <div>
+                    <label for="mi">Middle Initial</label><br>
+                    <input type="text" id="mi" name="mi" class="txtbox" required><br>
+                </div>
+
+                <div>
+                    <label for="courseStrand">Course/Strand</label><br>
+                    <select id="course" name="course" class="access-dropdown">
+                        <option value="no-value-selected">-- SELECT COURSE/STRAND --</option>
+                        <option value="BSBA">Bachelor of Science in Business Administration</option>
+                        <option value="BSHM">Bachelor of Science in Hotel Management</option>
+                        <option value="BSIT">Bachelor of Science in Information Technology</option>
+                        <option value="ITMAWD">Information Technology (Mobile and Web Development)</option>
+                        <option value="CCTEC">CCTEC</option>
+                        <option value="CUARTS">CUARTS</option>
+                        <option value="ABM">Administration and Business Management</option>
+                        <option value="HUMSS">Humanities</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="studentid">Organization</label><br>
+                    <input type="text" id="orgid" name="organization" class="txtbox" required><br>
+                </div>
+
+                <div>
+                    <label for="mobile">Contact No</label><br>
+                    <input type="text" id="mobile" name="mobile" class="txtbox" required><br>
+                </div>
+
+                <div>
+                    <label for="acces_lev">Access Level</label><br>
+                    <select id="access-lvl" name="access" class="access-dropdown">
+                        <option value="no-value-selected">-- SELECT ACCESS LEVEL -- </option>
+                        <option value="ADMIN">Admin</option>
+                        <option value="ORGANIZATION">Organization</option>
+                        <option value="STUDENT">Student</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="emailadd">E-mail address</label><br>
+                    <input type="text" id="email" name="email" value="" class="txtbox" required><br>
+                </div>
+            </div>
+            <div>
+                <input type="submit" class="btnn"><span class="spanHover"></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
